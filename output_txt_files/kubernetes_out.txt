@@ -1,0 +1,14 @@
+First time (pod creating):
+deployment.apps/project-ml created
+NAME                        READY   STATUS              RESTARTS   AGE
+project-ml-c66d5c5f-mv5pm   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+Second time (pod created):
+error: failed to create deployment: deployments.apps "project-ml" already exists
+NAME                        READY   STATUS    RESTARTS   AGE
+project-ml-c66d5c5f-mv5pm   1/1     Running   0          97s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
