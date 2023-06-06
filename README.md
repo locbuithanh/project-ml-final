@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/locbuithanh/project-ml-final/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/locbuithanh/project-ml-final/tree/master)
 
 ## Project Overview
 
@@ -41,6 +41,7 @@ source .devops/bin/activate
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+4. Run `./make_prediction.sh` to check if the app is running
 
 ### Kubernetes Steps
 
@@ -48,3 +49,10 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+## Files in directory
+* .circleci/config.yml: Set up the environment and run test everytime pushing to Github
+* output_txt_files: Including output files
+* Dockerfile: Instructions to build docker image
+* run_docker.sh: Build and run docker image
+* run_kubernetes.sh: Deploy application on the Kubernetes cluster
